@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg: #b0d0c4;
+  --bg-header: #034b4e;
+  --bg-home-sections: #d4f5ce;
+  --text-bio: #1b856a;
+  --text-menu: #233922;
+  --line-menu: #0c714f;
+  --input-search: #507e6e;
+  --aside-line: #a0afc2;
+  --text-bio-description: #4b6d49;
+  --text-count-infos: #1c421a;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Rubik", sans-serif;
+
+  font-size: 1.6rem;
+  background: var(--bg);
+
+}
+
+.container-login {
+  max-width: 111rem;
+  height: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  /* overflaw: hidden; */
+  clip:rect(0, 0, 0, 0,);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+header {
+  display: flex;
+  background-color: #3c7663;
+  padding: 0.rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-login {
+  background: #659a92a8;
+  width: 7.3rem;
+  height: 2.9rem;
+  margin-right: 2.9rem;
+  border-radius: 20px;
+}
+
+.logo-login img {
+  width: 6.8rem;
+  height: 2.9rem;
+}
+
+nav {
+  display: flex;
+  height: 3.8rem;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  font-size: 1.2rem;
+  list-style: none;
+  gap: 1.6rem;
+
+}
+
+header a:hover {
+  text-shadow: 0 0 0.1rem var(--text-menu);
+}
+
+.logout {
+  margin-left: 1.6rem;
+
+}
+
+.logout a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.logout a::before {
+  content: "";
+  border-left: 2px solid #bac79c;
+  margin: 0 1.6rem 0 20.0rem;
+
+}
+
+header >li::after {
+  content: "";
+  display: block;
+  border-left: 1px solid #6f926b;
+  margin-right: 34rem;
+
+
+}
+header ul a {
+text-decoration: none;
+color: #fff;
+font-size: 1.7rem;
+}
+
+form input {
+  display: flex;
+  align-items: center;
+  border: none;
+  color: #fff;
+  border-radius: 3.4rem;
+  background: var(--input-search) url(./lupa.png) no-repeat scroll 19.5rem 0.01rem;
+  padding-left: 30px;
+  padding: 0.5rem 1.2rem;
+  margin-left: 2.4rem;
+  color: #fff;
+  outline: none;
+  font-size: 1.7rem;
+}
+
+form input::placeholder {
+  color: #fff;
+}
+
+
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding-top: 2.4rem;
+  width: 100%;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17.7rem;
+  background: var(--bg-home-sections); 
+  margin-left: 17.9rem;
+  border-radius: 0.8rem;
+  
+
+}
+
+div .img-profile {
+  padding: 1.5rem;
+  
+}
+
+div .info-bio {
+  padding: 0.07rem;
+  width: 75%;
+}
+
+div .info-bio h3 {
+  margin: 0.05;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--text-bio);
+}
+
+div .info-bio p {
+  padding: 0.2rem 0.1rem;
+  font-size: 1.5rem;
+  color: var(--text-bio-description);
+
+}
+
+div .social-media {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.8rem;
+  
+
+}
+
+div .social-media a {
+  text-decoration: none;
+  color: var(--text-bio);
+}
+
+.social-media div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.8rem;
+}
+
+
+aside > div::after {
+  content: "";
+  border-bottom: 0.2rem solid gray;
+  display: block;
+  opacity: 0.5;
+}
+
+.img-profile img{
+width: 13rem;
+height: 13rem;
+
+}
+
+
+
+.main-middle {
+padding: 0 5.4rem 0 2.4rem; 
+padding-top: 0.1rem;
+margin-left: 3.6rem;
+width: 49rem;
+height: 54rem;
+}
+
+div .main-middle p {
+width: 43rem;
+}
+
+/* SECTION WELCOME */
+.welcome {
+background: var(--bg-home-sections);
+border-radius: 0.8rem;
+padding: 5.4rem;
+height: 19rem;
+border-top-right-radius: 80px;
+
+}
+.welcome h2 {
+font-size: 2.8rem;
+font-weight: 400;
+padding-bottom: 3rem;
+height: 2.2rem;
+left: 4.4rem;
+}
+
+.welcome > p {
+font-size: 1.5rem;
+color: var(--text-bio-description);
+height: 3.1rem;
+}
+
+.welcome > p span {
+font-weight: 700;
+}
+
+.count-infos {
+display: flex;
+padding-top: 3rem;
+align-items: center;
+gap: 3rem;
+
+}
+
+.count-infos .img {
+display: flex;
+align-items: center;
+height: 0.5rem;
+}
+
+div .img {
+display: flex;
+align-items: center;
+}
+
+.repos p,
+.stars p,
+.followers p,
+.mensagens p {
+font-size: 1.2rem;
+padding: 0.4rem 0 0.5rem 0;
+color: var(--text-count-infos);
+height: 3.4rem;
+width: 5.4rem;
+
+}
+
+
+
+div .repos {
+width: 4.5rem;
+}
+
+div .stars {
+width: 3.5rem;
+}
+
+div .followers {
+width: 3.7rem;
+}
+
+section .welcome {
+padding-top: 93rem;
+}
+
+
+
+/* SECTION FOLLOWING / FOLLOWERS */
+
+.following {
+padding-top: 5.6r
+}
+
+.info-following,
+.info-followers {
+display: flex;
+}
+
+.list-following ul,
+.list-followers ul {
+display: flex;
+background: #d4f5ce;
+border-radius: 2.2rem;
+
+
+
+}
+
+.list-following li,
+.list-followers li {
+list-style: none;
+
+
+}
+
+.list-following img,
+.list-followers img {
+width: 9.4rem;
+height: 10.2rem;
+border-radius: 1.4rem;
+padding-right: 9px;
+
+}
+
+div .list-following h2 {
+padding-top: 0,4rem;
+
+}
+
+.list-following, 
+.list-followers {
+height: 20rem;
+background: #d4f5ce;
+width: 40rem;
+border-radius: 0.8rem;
+
+padding: 1.2rem;
+padding-left: 5px;
+padding-bottom: 10px;
+}
+
+div .followers-following {
+position: relative;
+top: 10px;
+}
+
+.list-followers {
+padding-bottom: 5px;
+margin-bottom: 5px;
+}
+
+div .followers-following p {
+font-size: medium;
+font-style: oblique;
+}
+
+div .info-followers {
+margin-bottom: 0.4px;
+
+}
+
+
+div .following {
+padding-bottom: 9rem;
+}
